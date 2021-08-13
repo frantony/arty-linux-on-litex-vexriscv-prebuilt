@@ -1,0 +1,11 @@
+0. cd $TFTPBOOT && git clone https://github.com/frantony/arty-linux-on-litex-vexriscv-prebuilt
+or
+cd $TFTPBOOT && git clone https://gitlab.com/frantony/arty-linux-on-litex-vexriscv-prebuilt
+
+1. copy barebox-litex-linux.img to $TFTPBOOT/boot.bin;
+
+2. run burn.sh;
+
+3. wait barebox prompt and run
+
+     dhcp; tftp arty-linux-on-litex-vexriscv-prebuilt/boot.sh; ./boot.sh
